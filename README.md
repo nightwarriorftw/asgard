@@ -14,5 +14,8 @@ i3wm is a tool which helps you to fast your speed and increase efficiency. It al
 - Install ```i3lock fancy``` to lock your system.
 - Install ```acpi```
 
+
+Don't forget to install ```xbright```(alternative for xbacklight) and ```pluse audio```(for audio).
+
 ## Setup
 So the process for setting i3wm is simple. Use the above configs of ```i3```, ```compton``` and ```rofi``` for setting thing up. Place these folder in you ```~/.config``` folder. Press ```Mod+Shift+R``` and you are good to go. 
