@@ -65,4 +65,15 @@ EndSection' > /etc/X11/xorg.conf.d/40-libinput.conf
 $ systemctl restart lightdm
 ```
 
--  
+- Installing ZSH and changing default shell to zsh
+
+Install zsh with
+```
+sudo apt install zsh
+```
+Now install oh-my-zsh
+```
+sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+```
+While installing the installer will ask about the default shell to choose, type 'y' if you want zsh to be default then just simply logout and login.
+
