@@ -5,35 +5,11 @@ i3wm is a tool which helps you to fast your speed and increase efficiency. It al
 
 ## Installation Process
 
-- Install Dependencies
-```
-sudo apt install libxcb1-dev libxcb-keysyms1-dev libpango1.0-dev libxcb-util0-dev libxcb-icccm4-dev libyajl-dev libstartup-notification0-dev libxcb-randr0-dev libev-dev libxcb-cursor-dev libxcb-xinerama0-dev libxcb-xkb-dev libxkbcommon-dev libxkbcommon-x11-dev xutils-dev libxcb-shape0-dev autoconf
-```
+- Install i3-gaps
 
-Now it’s time to grab Airblader‘s xcb-util-xrm and install it from source.
-
-```
-cd /tmp
-git clone https://github.com/Airblader/xcb-util-xrm
-cd xcb-util-xrm
-git submodule update --init
-./autogen.sh --prefix=/usr
-make
-sudo make install
-```
-
-Ok – everything’s setup, now we can pull down the repo for i3-gaps and install it!
-
-```
-cd /tmp 
-git clone https://www.github.com/Airblader/i3 i3-gaps
-cd i3-gaps
-autoreconf --force --install
-mkdir build
-cd build
-../configure --prefix=/usr --sysconfdir=/etc
-make
-sudo make install
+```BASH
+sudo add-apt-repository -y ppa:regolith-linux/stable
+sudo apt install i3-gaps
 ```
 
 - Install ```i3blocks``` for showing status bar

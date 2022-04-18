@@ -263,5 +263,3 @@ exec --no-startup-id xset -b
 exec --no-startup-id feh --bg-fill ~/Pictures/profile.jpg 
 exec /usr/bin/numlockx on
 gaps inner 10
-tlp start
-
