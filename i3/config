@@ -156,7 +156,7 @@ assign [class="Thunder Bird"]       → $ws6
 assign [class="gitter"]             → $ws7
 assign [class="Feedreader"]         → $ws8
 assign [class="Slack"]              → $ws9
-assign [class="quassel"]     	    → $ws9
+assign [class="quassel"]            → $ws9
 assign [class="Gnome-disks"]        → $ws10
 assign [class="GParted"]            → $ws10
 assign [class="Menu"]               → $ws10
@@ -237,11 +237,14 @@ bindsym $mod+p                  exec systemctl poweroff
 # bindsym --release Num_Lock  exec pkill -SIGRTMIN+11 i3blocks
 
 # Pulse Audio controls
-bindsym XF86AudioRaiseVolume    exec --no-startup-id pactl set-sink-volume 0 +5%   #increase sound volume
-bindsym XF86AudioLowerVolume    exec --no-startup-id pactl set-sink-volume 0 -5%   #decrease sound volume
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 1 +5% #increase sound volume
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 1 -5% #decrease sound volume
+bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 1 toggle # mute sound
+
 # Sreen brightness controls
 bindsym XF86MonBrightnessUp     exec xbright +10                             # increase screen brightness
 bindsym XF86MonBrightnessDown   exec xbright -10                           # decrease screen brightness
+
 # Touchpad controls
 bindsym XF86TouchpadToggle      exec ~/.config/i3/scripts/touggle.sh                 #toggle touchpad
 
@@ -258,8 +261,8 @@ exec --no-startup-id xautolock -time 10 -locker "i3lock-fancy -gpf Comic-Sans-MS
 exec --no-startup-id nm-applet
 exec --no-startup-id redshift
 exec --no-startup-id pulseaudio --start
-exec --no-startup-id feh --bg-scale ~/Pictures/profile.jpg
+exec --no-startup-id feh --bg-scale /home/nightwarriorftw/Pictures/wallpaper.jpg
 exec --no-startup-id xset -b 
-exec --no-startup-id feh --bg-fill ~/Pictures/profile.jpg 
+exec --no-startup-id feh --bg-fill /home/nightwarriorftw/Pictures/wallpaper.jpg
 exec /usr/bin/numlockx on
 gaps inner 10
