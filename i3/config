@@ -258,6 +258,7 @@ exec --no-startup-id compton
 exec --no-startup-id xinput set-prop "SynPS/2 Synaptics Touchpad" "Synaptics Tap Time" 1
 exec --no-startup-id xinput set-prop "SynPS/2 Synaptics Touchpad" "Synaptics Scrolling Distance" -107, -107
 exec --no-startup-id xautolock -time 10 -locker "i3lock-fancy -gpf Comic-Sans-MS -- scrot -z"
+exec --no-startup-id xrandr --output eDP-1 --auto --left-of HDMI-1 # dual screen setup
 exec --no-startup-id nm-applet
 exec --no-startup-id redshift
 exec --no-startup-id pulseaudio --start
