@@ -1,6 +1,6 @@
 <p align="center">
   <a href="" rel="noopener">
- <img width=200px height=200px src="./public/asgard.jpg" alt="logo" style="border-radius: 50%"></a>
+ <img width=200px height=200px src="./public/asgard.jpg" alt="logo" style="border-radius: 90px"></a>
 </p>
 
 <h3 align="center">Asgard</h3>
