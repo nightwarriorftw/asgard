@@ -1,55 +1,79 @@
-# Dot_Files
+<p align="center">
+  <a href="" rel="noopener">
+ <img width=200px height=200px src="https://imgur.com/a/dr7Ys06" alt="logo"></a>
+</p>
 
-## About
+<h3 align="center">Asgard</h3>
+
+<div align="center">
+
+[![Status](https://img.shields.io/badge/status-active-success.svg)]()
+[![GitHub Issues](https://img.shields.io/github/issues/kylelobo/The-Documentation-Compendium.svg)](https://github.com/nightwarriorftw/asgard/issues)
+[![GitHub Pull Requests](https://img.shields.io/github/issues-pr/kylelobo/The-Documentation-Compendium.svg)](https://github.com/nightwarriorftw/asgard/pulls)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](/LICENSE)
+
+</div>
+
+---
+
+<p align="center"> Personal Invaluable Configurations :)
+    <br> 
+</p>
+
+## 📝 Table of Contents
+
+- [About](#about)
+- [Getting Started](#getting_started)
+- [Deployment](#deployment)
+- [Usage](#usage)
+- [Authors](#authors)
+- [Acknowledgments](#acknowledgement)
+
+## 🧐 About <a name = "about"></a>
+
 i3wm is a tool which helps you to fast your speed and increase efficiency. It also uses less RAM of you system thus decreases workload on CPU. Set some shortcuts in your config file and you will be good to go. 
 
-## Installation Process
 
-- Install i3-gaps
+## 🏁 Getting Started <a name = "getting_started"></a>
+
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
+
+### Prerequisites
+
+Just be curious :)
+
+### Installing
+
+1. Install i3-gaps
 
 ```BASH
 sudo add-apt-repository -y ppa:regolith-linux/stable
 sudo apt install i3-gaps
 ```
 
-- Install ```i3blocks``` for showing status bar
-- Install ```feh``` for background image
-- Install ```compton``` for transparent background of terminal
-- Install ```rofi``` which can be used as search tool.
-- Install ```i3lock-fancy``` to lock your system.
-- Install ```acpi```
+2. Install the following dependencies as well
 
+- `i3blocks` for showing status bar
+- `feh` for background image
+- `compton` for transparent background of terminal
+- `rofi` which can be used as search tool.
+- `i3lockfancy` to lock your system.
+- `xbright` (alternative of xbacklight) for controlling brightness [install xbright](https://github.com/snobb/xbright)
+- `pulse audio` for audio settings
+- `acpi`
 
-Don't forget to install ```xbright```(alternative for xbacklight) and ```pulse audio```(for audio).
+## 🎈 Usage <a name="usage"></a>
 
-## Setup
-So the process for setting i3wm is simple. Use the above configs of ```i3```, ```compton``` and ```rofi``` for setting thing up. Place these folder in you ```~/.config``` folder. Press ```Mod+Shift+R``` and you are good to go. 
+i3wm is a tool which helps you to fast your speed and increase efficiency.
 
-## General Hacks
-While installing Buster 10 I faced some general issues, so following are some tips and tricks
+## 🚀 Deployment <a name = "deployment"></a>
 
-- Touchpad not working
-```
-$ mkdir -p /etc/X11/xorg.conf.d
-$ echo 'Section "InputClass"
-        Identifier "libinput touchpad catchall"
-        MatchIsTouchpad "on"
-        MatchDevicePath "/dev/input/event*"
-        Driver "libinput"
-        Option "Tapping" "on"
-EndSection' > /etc/X11/xorg.conf.d/40-libinput.conf
-$ systemctl restart lightdm
-```
+After installing i3WM, it might be possible some things won't work as expected. Usually in this case you will have to debug and get those things resolved on your own.
 
-- Installing ZSH and changing default shell to zsh
+## ✍️ Authors <a name = "authors"></a>
 
-Install zsh with
-```
-sudo apt install zsh
-```
-Now install oh-my-zsh
-```
-sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-```
-While installing the installer will ask about the default shell to choose, type 'y' if you want zsh to be default then just simply logout and login.
+- [@nightwarriorftw](https://github.com/nightwarriorftw)
 
+## 🎉 Acknowledgements <a name = "acknowledgement"></a>
+
+- Grateful for everthing
